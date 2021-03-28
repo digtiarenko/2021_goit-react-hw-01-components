@@ -1,6 +1,9 @@
 import React from 'react';
 import Profile from './components/Profile/Profile';
-import user from './user.json';
+import StatsList from './components/Statistics/StatsList';
+
+import user from './components/Profile/user.json';
+import statisticalData from './components/Statistics/statistical-data.json';
 
 const App = () => {
   return (
@@ -14,6 +17,8 @@ const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+      <h1>Задание 2</h1>
+      <StatsList title="Upload stats" stats={statisticalData} />
     </div>
   );
 };

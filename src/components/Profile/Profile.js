@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
-console.log(styles);
-
 const Profile = props => {
   return (
     <div className={styles.profile}>
