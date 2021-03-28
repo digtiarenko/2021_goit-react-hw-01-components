@@ -1,31 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles.module.css';
+
+console.log(styles);
 
 const Profile = props => {
   return (
-    <div className="profile">
-      <div className="description">
+    <div className={styles.profile}>
+      <div className={styles.description}>
         <img
           src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
           alt="Аватар пользователя"
-          className="avatar"
+          className={styles.avatar}
         />
-        <p className="name">{props.name}</p>
+        <p className={styles.name}>{props.name}</p>
         <p className="tag">@{props.tag}</p>
-        <p className="location">{props.location}</p>
+        <p className={styles.location}>{props.location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className={styles.stats}>
         <li>
-          <span className="label">Followers</span>
+          <span className={styles.label}>Followers</span>
           <span className="quantity">{props.followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
+          <span className={styles.label}>Views</span>
           <span className="quantity">{props.views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
+          <span className={styles.label}>Likes</span>
           <span className="quantity">{props.likes}</span>
         </li>
       </ul>
