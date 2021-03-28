@@ -1,9 +1,10 @@
 import React from 'react';
 import Profile from './components/Profile/Profile';
 import StatsList from './components/Statistics/StatsList';
-
+import FriendList from './components/FriendList/FriendList';
 import user from './components/Profile/user.json';
 import statisticalData from './components/Statistics/statistical-data.json';
+import friends from './components/FriendList/friends.json';
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
       />
       <h1>Задание 2</h1>
       <StatsList title="Upload stats" stats={statisticalData} />
+      <h1>Задание 3</h1>
+      <FriendList friends={friends} />
     </div>
   );
 };
